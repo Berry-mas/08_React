@@ -1,7 +1,13 @@
+// 자식컴포넌트이고 부모컴포넌트로부터 props를 통해서 값을 전달 받는다.
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+
 function PropsComponent() {
   return (
     <div>
-      <h1>Hello</h1>
+      <Welcome name='Alice' />
+      <Welcome name='Bob' />
     </div>
   );
 }
