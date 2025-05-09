@@ -9,6 +9,9 @@ export default function Home() {
         <li>
           <Link href="/chap01/section01/">Props</Link>
         </li>
+        <li>
+          <Link href="/chap01/section02/">UsingProps</Link>
+        </li>
       </ul>
     </div>
   );
