@@ -11,12 +11,22 @@ React에서 자주 사용하는 이벤트 타입들
 모든 이벤트는 합성 이벤트(SyntheticEvent)로 브라우저 호환성 보장
 */
 import FormEvent from "./components/FormEvent";
+import MouseEvent from "./components/MouseEvent";
+import KeyEvent from "./components/KeyEvent";
 
 export default function EventTypes() {
   return (
     <div>
       <h2>다양한 이벤트 타입</h2>
       <FormEvent />
+
+      <hr />
+
+      <MouseEvent />
+
+      <hr />
+
+      <KeyEvent />
     </div>
   );
 }
