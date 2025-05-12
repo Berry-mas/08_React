@@ -7,16 +7,16 @@ export default function Home() {
       <h3>chap01</h3>
       <ul>
         <li>
-          <Link href="/chap01/section01">Use Effect Basic</Link>
+          <Link href="/chap01/section01">UseEffect Basic</Link>
         </li>
         <li>
-          <Link href="/chap01/section02">Use Effect Dependency</Link>
+          <Link href="/chap01/section02">UseEffect Dependency</Link>
         </li>
         <li>
-          <Link href="/chap01/section03">Use Effect CleanUp</Link>
+          <Link href="/chap01/section03">UseEffect CleanUp</Link>
         </li>
         <li>
-          <Link href="/chap01/section04">Use Effect Problem</Link>
+          <Link href="/chap01/section04">UseEffect Problem</Link>
         </li>
       </ul>
 
@@ -25,7 +25,7 @@ export default function Home() {
       <h3>chap02</h3>
       <ul>
         <li>
-          <Link href="/chap02/section01">Use Layout Effect</Link>
+          <Link href="/chap02/section01">UseLayout Effect</Link>
         </li>
         <li>
           <Link href="/chap02/section02">Dom Measure</Link>
@@ -37,7 +37,10 @@ export default function Home() {
       <h3>chap03</h3>
       <ul>
         <li>
-          <Link href="/chap03/section01">Use Ref Dom Access</Link>
+          <Link href="/chap03/section01">UseRef Dom Access</Link>
+        </li>
+        <li>
+          <Link href="/chap03/section02">UseRef Value Keep</Link>
         </li>
       </ul>
     </>
