@@ -43,6 +43,15 @@ export default function Home() {
           <Link href="/chap03/section02">UseRef Value Keep</Link>
         </li>
       </ul>
+
+      <hr></hr>
+
+      <h3>chap04</h3>
+      <ul>
+        <li>
+          <Link href="/chap04/section01">UseMemo Example</Link>
+        </li>
+      </ul>
     </>
   );
 }
