@@ -42,6 +42,9 @@ export default function Home() {
         <li>
           <Link href="/chap03/section02">UseRef Value Keep</Link>
         </li>
+        <li>
+          <Link href="/chap03/section03">UseRef Timer Focus</Link>
+        </li>
       </ul>
 
       <hr></hr>
@@ -50,6 +53,9 @@ export default function Home() {
       <ul>
         <li>
           <Link href="/chap04/section01">UseMemo Example</Link>
+        </li>
+        <li>
+          <Link href="/chap04/section02">UseCallback</Link>
         </li>
       </ul>
     </>
