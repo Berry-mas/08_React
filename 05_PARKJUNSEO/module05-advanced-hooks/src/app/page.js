@@ -5,6 +5,7 @@ export default function Home() {
     <>
       <h1>Advanced Hooks</h1>
 
+      <h2>chap01</h2>
       <ul>
         <li>
           <Link href="/chap01/section01">
@@ -25,13 +26,16 @@ export default function Home() {
 
       <hr></hr>
 
-      <h1>chap02</h1>
+      <h2>chap02</h2>
       <ul>
         <li>
           <Link href="/chap02/section01">UseFetch</Link>
         </li>
         <li>
           <Link href="/chap02/section02">UseLocalStorage</Link>
+        </li>
+        <li>
+          <Link href="/chap02/section03">UseFormValidation</Link>
         </li>
       </ul>
     </>

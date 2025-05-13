@@ -1,4 +1,4 @@
-import UseTransitionConcept from "@/components/chap01/section01/UseTransition";
+import UseTransitionConcept from "@/components/chap01/section01/UseTransitionConcept";
 
 function Section01() {
   return (

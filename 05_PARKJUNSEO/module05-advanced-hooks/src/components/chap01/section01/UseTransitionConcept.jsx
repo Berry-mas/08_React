@@ -30,7 +30,7 @@
 
 import { useState, useTransition } from "react";
 
-// 초기 데이터 (서버에서 미리 생성 가능)
+// 초기 데이터(서버에서 미리 생성 가능)
 const ITEMS = Array.from({ length: 5000 }, (_, i) => `아이템 ${i + 1}`);
 
 export default function UseTransitionConcept() {
@@ -40,14 +40,14 @@ export default function UseTransitionConcept() {
 
   const handleChange = (e) => {
     const value = e.target.value;
-    setQuery(value); // 즉시 반영 (높은 우선순위)
+    setQuery(value); // 즉시반영(높은 우선순위)
 
     startTransition(() => {
       // 비동기 지연(2초)으로 작업 시뮬레이션
       return new Promise((resolve) => {
         setTimeout(() => {
           const filtered = ITEMS.filter((item) =>
-            item.toLowerCase().includes(value.toLowerCase)
+            item.toLowerCase().includes(value.toLowerCase())
           );
           setFilteredItems(filtered);
           resolve();
@@ -55,6 +55,7 @@ export default function UseTransitionConcept() {
       });
     });
   };
+
   return (
     <div>
       <h2>useTransition 예제</h2>
@@ -62,21 +63,21 @@ export default function UseTransitionConcept() {
         type="text"
         value={query}
         onChange={handleChange}
-        placeholder="아이템 검색"
+        placeholder="아이템 검색..."
       />
 
       <p>
-        상태 :{" "}
+        상태:{" "}
         {isPending ? (
-          <span style={{ color: "red" }}>{query} 검색 중...</span>
+          <span style={{ color: "red" }}>{query} 검색중 ...</span>
         ) : (
           "완료"
         )}
       </p>
-      <p> 검색된 아이템 : {filteredItems.length}개</p>
+      <p>검색된 아이템: {filteredItems.length}개</p>
       <ul>
         {filteredItems.slice(0, 50).map((item) => (
-          <li key={item}>item</li>
+          <li key={item}>{item}</li>
         ))}
       </ul>
     </div>

@@ -1,9 +1,9 @@
-import useLocalStorageExample from "@/components/chap02/section02/UseLocalStorage";
+import UseLocalStorageExample from "@/components/chap02/section02/UseLocalStorage";
 
 function Section02() {
   return (
     <div>
-      <useLocalStorageExample />
+      <UseLocalStorageExample />
     </div>
   );
 }
