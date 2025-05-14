@@ -5,6 +5,7 @@ import { useSelector, useDispatch } from "react-redux";
 function Section01() {
   const state = useSelector((state) => state.counter);
   const userState = useSelector((state) => state.user);
+
   const dispatch = useDispatch();
 
   return (
@@ -19,5 +20,4 @@ function Section01() {
     </>
   );
 }
-
 export default Section01;

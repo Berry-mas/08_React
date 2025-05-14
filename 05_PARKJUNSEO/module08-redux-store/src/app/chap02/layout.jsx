@@ -8,6 +8,7 @@ export default function Layout({ children }) {
   return (
     <Provider store={store}>
       {children}
+
       <SubscribeComponent />
     </Provider>
   );

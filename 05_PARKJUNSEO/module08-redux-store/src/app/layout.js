@@ -1,6 +1,6 @@
 export default function RootLayout({ children }) {
   return (
-    <html lang="ko">
+    <html lang='ko'>
       <body>{children}</body>
     </html>
   );

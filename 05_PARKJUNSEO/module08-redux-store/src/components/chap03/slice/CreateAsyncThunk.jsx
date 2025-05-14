@@ -30,3 +30,24 @@ createSlice가 필요한 이유:
 - reducers: 동기 action과 reducer 정의.
 - 자동 생성되는 action: counterSlice.actions.increment 등.
 */
+
+import { createSlice } from "@reduxjs/toolkit";
+
+const counterSlice = createSlice({
+  name: "counter", // 슬라이스 이름
+  initialState: { value: 0 }, // 초기 상태
+  reducers: {
+    // action : reducer 정의
+    increment: (state) => {
+      state.value += 1;
+    },
+    decrement: (state) => {
+      state.value -= 1;
+    },
+  },
+});
+// counterSlice.actions: slice내에 있는 action을 모아서 반환
+export const { increment, decrement } = counterSlice.actions;
+
+// counterSlice.reducer : slice내에 있는 reducer를 반환
+export default counterSlice.reducer;
